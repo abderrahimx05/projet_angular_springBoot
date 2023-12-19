@@ -37,7 +37,7 @@ export default function ShowUser() {
                 {client.email}
               </li>
               <li className="list-group-item">
-                <b>Email:</b>
+                <b>Ville:</b>
                 {client.ville}
               </li>
             </ul>

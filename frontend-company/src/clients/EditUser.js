@@ -51,7 +51,7 @@ export default function EditUser() {
           <div className="mb-3">
             <label htmlFor="Prénom" className="form-label">
               {" "}
-              Votre prénpm :
+              Votre prénom :
             </label>
             <input
               type={"text"}
