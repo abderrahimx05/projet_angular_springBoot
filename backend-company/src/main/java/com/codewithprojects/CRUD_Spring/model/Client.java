@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+
 @Entity
 @Table(name="client")
 public class Client {
@@ -25,8 +26,8 @@ public class Client {
     
      @Column(name="ville")
      private String ville;
-
-   
+    
+    
 
     public Client() {
     }

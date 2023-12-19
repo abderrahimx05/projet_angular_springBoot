@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../logo.png";
 export default function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+      <nav
+        className="navbar navbar-expand-lg navbar-light bg-primary"
+        logo={logo}
+        logoStyle={{ marginTop: "-5px", maxWidth: "100px", maxHeight: "45px" }}
+      >
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            Navbar
-          </Link>
+          <Link className="navbar-brand" to="/"></Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,11 +29,11 @@ export default function Navbar() {
                   Home
                 </Link>
               </li>
-              <Link className="btn btn-success" to="/newclient">
-                Ajouter Client
-              </Link>
             </ul>
-          </div>
+          </div>{" "}
+          <Link className="btn btn-success" to="/newclient">
+            Ajouter un Client
+          </Link>
         </div>
       </nav>
     </div>

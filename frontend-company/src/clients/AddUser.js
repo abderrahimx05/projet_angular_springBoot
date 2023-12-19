@@ -8,8 +8,9 @@ export default function AddUser() {
     lastname: "",
     firstname: "",
     email: "",
+    ville: "",
   });
-  const { lastname, firstname, email } = client;
+  const { lastname, firstname, email, ville } = client;
 
   const onInputChange = (e) => {
     setClient({ ...client, [e.target.name]: e.target.value });
@@ -64,6 +65,20 @@ export default function AddUser() {
                 placeholder="Entrer votre email"
                 name="email"
                 value={email}
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="Ville" className="form-label">
+                {" "}
+                Votre ville :
+              </label>
+              <input
+                type={"text"}
+                className="form-control"
+                placeholder="Entrer votre ville"
+                name="ville"
+                value={ville}
                 onChange={(e) => onInputChange(e)}
               />
             </div>
